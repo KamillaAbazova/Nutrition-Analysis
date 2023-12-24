@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.search {
+    width: 60%;
+    padding: 10px 20px;
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px 2px rgb(149, 151, 146);
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    
+}
+.block {
+    width: 40%;
+    background-color: rgb(213, 245, 145);
+}
+button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(149, 151, 146);
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    color: rgb(251, 251, 79);
+
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    background-color: rgb(149, 151, 146);
+}
+.calories {
+    font-size: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media all and (max-width: 800px) {
+    video {
+        width: 100%;
+        background-position-x: left;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    button {
+        font-size: 15px;
+    }
+    .calories {
+        font-size: 15px;
+    }
+    .search {
+        font-size: 12px;
+        width: 90%;
+    }
+    .block {
+        width: 80%;
+    }
+    .nutrition {
+        font-size: 15px;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
